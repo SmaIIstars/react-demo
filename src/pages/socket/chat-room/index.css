@@ -1,0 +1,47 @@
+.ChatRoom {
+  width: 500px;
+  margin: 80px auto 0 auto;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.ChatRoom-header {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.ChatRoom-header-quit {
+  float: right;
+}
+
+.ChatRoom-content {
+  height: 400px;
+  padding: 10px;
+  overflow: auto;
+  border-bottom: 1px solid #eee;
+}
+
+.ChatRoom-content-item {
+  padding: 5px 0px;
+}
+
+.ChatRoom-content-id {
+  font-weight: bold;
+}
+
+.ChatRoom-content-message {
+  color: #444;
+  font-size: 13px;
+}
+
+.ChatRoom-content-tip {
+  font-size: 12px;
+  color: #ddd;
+  text-align: center;
+}
+
+.ChatRoom-message {
+  padding: 10px;
+  border: none;
+  outline: none;
+}

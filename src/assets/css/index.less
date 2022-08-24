@@ -1,0 +1,39 @@
+@import url("./normalize.css");
+
+body {
+  height: 100%;
+  background-color: beige;
+}
+
+.animation-breath {
+  animation-name: breath;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+
+  @keyframes breath {
+    from {
+      opacity: 0.3;
+    }
+    50% {
+      opacity: 0.8;
+    }
+    to {
+      opacity: 0.3;
+    }
+  }
+}
+
+.input-underline {
+  // 光标颜色
+  // caret-color: white;
+  background-color: transparent;
+  border: none;
+  border-bottom: rgba(0, 0, 0, 0.5) solid;
+  text-align: center;
+
+  &:focus-visible {
+    outline: 0;
+    animation: none;
+  }
+}

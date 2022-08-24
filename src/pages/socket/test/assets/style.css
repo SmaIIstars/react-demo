@@ -1,0 +1,454 @@
+/********** CSS for gabrielgambetta.com **********/
+
+html {
+  background-color: #E0E0E0;
+}
+
+body {
+  font-family: open sans, sans-serif;
+  color: #212529;
+}
+
+h2 {
+  border-bottom: 1px solid;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-red {
+  color: red;
+}
+
+img.profile_pic {
+  height: 180px;
+  width: 180px;
+  float: left;
+  margin-right: 10px;
+  border-radius: 50%
+}
+
+div.main {
+  max-width: 960px;
+  margin: 3em auto;
+  box-shadow: 0 0 20px;
+  padding: 2em 3em;
+  background-color: #FFFFFF;
+}
+
+div.copyright {
+  text-align: center;
+  padding-bottom: 5px;
+  color: grey;
+  font-size: 10pt;
+}
+
+div.nav {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+div.nav a.homelink {
+  color: lightgrey;
+  font-size: 20pt;
+  float: right;
+  text-decoration: none;
+}
+
+div.nav a.homelink:hover {
+  color: black;
+}
+
+/********** Linkable headings **********/
+
+h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h4 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h2:hover a {
+  text-decoration: none;
+}
+
+h3:hover a {
+  text-decoration: none;
+}
+
+h4:hover a {
+  text-decoration: none;
+}
+
+div.prearticle {
+  background: #f0f0f0;
+  padding: 0.5em 0.5em;
+  border-radius: 0.5em;
+  font-family: roboto, open sans, sans-serif;
+}
+
+.prearticle>p {
+  margin: 0;
+}
+
+figure, .figure {
+  padding: 1em;
+  border-radius: 1em;
+  background-color: #F9F9F9;
+  display: table;
+  margin: auto;
+  text-align: center;
+}
+
+figure>img {
+  max-width: 100%;
+}
+
+.figure>img {
+  max-width: 100%;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 75%;
+  padding-top: 0.75em;
+  color: #404040;
+}
+
+pre {
+  background-color: #E0E0E0;
+  padding: 10px;
+  border-radius: 10px;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.code_caption {
+  margin-top: -1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: #2020FF;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.centered {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+canvas {
+  padding: 20px;
+}
+
+/*********************/
+
+input[type=button], input[type=submit], button, a.cgfs_demo {
+  background: #0069d9;
+  border-radius: 5px;
+  padding: 0.25em 0.5em;
+  border-color: #0069d9;
+  border: 1px solid transparent;
+  color: white;
+  vertical-align: middle;
+}
+
+input:hover[type=button], input:hover[type=submit], button:hover, a.cgfs_demo:hover {
+  background: #0062cc;
+}
+
+div.social {
+  text-align: center;
+  border: thin dotted grey;
+  display: table;
+  margin: 20px auto 0 auto;
+  padding: 5px 0;
+  clear: both;
+}
+
+div>blockquote {
+  background: #F0F0F0;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+/********** The Golden Seed **********/
+
+html.tgl {
+  background: url(/img/lsd_background.jpg);
+}
+
+.tgs_button {
+  background-color: #661d1b;
+  color: white;
+  font-family: Courier new;
+  font-size: 135%;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  margin: 10px 0;
+  padding: 15px 0px;
+  width: 100%;
+  display: inline-block;
+}
+
+.tgs_button:hover {
+  background-color: #a32e2b;
+  cursor: pointer;
+  color: white;
+}
+
+.tgs_button-download {
+  background-color: #ffffff;
+  color: #661d1b;
+  font-size: 100%;
+  border-style: solid;
+  border-width: 2px;
+  padding: 15px;
+  width: initial;
+}
+
+.tgs_review {
+  transition: opacity 500ms linear;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+.tgs_review-first {
+  position: relative;
+}
+
+.tgs_review-div {
+  float: right;
+}
+
+.tgs_cover {
+  max-width: 100%;
+  margin-left: 1em;
+  margin-top: 1em;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tgs_buybuttons {
+  clear: both;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px
+}
+
+@media (max-width:768px) {
+  .tgs_review-div {
+    float: none;
+    margin: auto;
+  }
+}
+
+div.book-btn-div {
+  margin: 0 25px;
+  padding: 25px;
+  border: 1px dotted brown;
+  display: inline-table;
+}
+
+@media (min-width:768px) {
+  div.book-btn-div {
+    width: 300px;
+  }
+}
+
+img.book-btn-img {
+  max-height: 350px;
+}
+
+@media (max-width:768px) {
+  img.book-btn-img {
+    max-width: 100%;
+  }
+}
+
+span.book-btn-price {
+  color: black;
+  font-size: 150%;
+  font-weight: bold;
+}
+
+span.book-btn-detail {
+  color: black;
+  font-size: 80%;
+  font-weight: bold;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  position: absolute;
+  width: 300px;
+  margin-left: -150px;
+  left: 50%;
+  bottom: 100%;
+  z-index: 1;
+  background-color: black;
+  color: white;
+  opacity: 0.9;
+  padding: 10px 0px;
+  border-radius: 10px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/********** Computer Graphics From Scratch **********/
+
+html.cgfs {}
+
+div.cgfs-buy {
+  background: palegoldenrod;
+  display: table;
+  margin: 0 auto;
+  margin-top: 1em;
+  padding: 15px;
+  text-align: center;
+  border-radius: 0.5em;
+  margin-bottom: 1em;
+}
+
+div.nsp_banner {
+  z-index: 1000;
+  border-radius: 5px;
+  background: lightgreen;
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+
+div.cgfs_navbar {
+  font-size: small;
+  background: lightgrey;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+a.cgfs_demo {
+  display: table;
+  margin: auto;
+  font-size: small;
+}
+
+html.cgfs table {
+  border-top: solid;
+  border-bottom: solid;
+  margin: auto;
+  margin-bottom: 1em;
+}
+
+html.cgfs dt {
+  font-weight: bold
+}
+
+table.cgfs-demo-controls {
+  margin: auto;
+  background-color: lightgray;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  border-spacing: 0 0.5em;
+}
+
+/********** Pathfinding Demystified **********/
+
+section.footnotes {
+  font-size: small;
+}
+
+.path_reachable {
+  color: green;
+  font-family: courier;
+}
+
+.path_explored {
+  color: red;
+  font-family: courier;
+}
+
+.path_path {
+  font-family: courier;
+}
+
+/****************************************/
+
+div.signup {
+  display: table;
+  margin: 0 auto;
+  margin-top: 1em;
+  padding: 15px;
+  text-align: center;
+  background-color: #e9e9e9;
+  border-radius: 0.5em;
+}
+
+div.signup_error {
+  display: none;
+  font-size: 75%;
+  color: red;
+  font-weight: bold;
+}
+
+form.paypal {
+  display: inline-block;
+}
+
+form.paypal input {
+  padding: 0.75em;
+}
+
+div.buycoffee {
+  text-align: center;
+  background: palegoldenrod;
+  display: table;
+  margin: auto;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  margin-top: 1em;
+}
+
+div.donations-text {
+  font-size: small;
+  font-weight: bold;
+  margin-bottom: 0.75em;
+}
