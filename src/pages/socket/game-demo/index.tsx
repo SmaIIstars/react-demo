@@ -36,7 +36,7 @@ const GameDemo = () => {
     const { host, port } = query;
     console.error(host, port);
 
-    const socket = io(`ws://${host}:${port}`);
+    const socket = io(`ws://${host}:${port}`, { path: "game-demo" });
     socket.id = curPlayer.current.id;
 
     setSocket(socket);

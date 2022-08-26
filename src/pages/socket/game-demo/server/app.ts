@@ -5,7 +5,7 @@ import { cloneDeep, isNumber, throttle } from "lodash";
 const args = process.argv.splice(2);
 const port = parseInt(args[0]) ?? 3101;
 
-const io = new Server(port, { cors: { origin: "*" } });
+const io = new Server(port, { cors: { origin: "*" }, path: "game-demo" });
 const playerList: Player[] = [];
 
 const getCurPlayerById = (id: string) =>
