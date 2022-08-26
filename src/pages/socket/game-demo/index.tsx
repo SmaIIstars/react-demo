@@ -18,7 +18,7 @@ type Action = {
 };
 
 const GameDemo = () => {
-  const [socket, setSocket] = useState(io());
+  const [socket, setSocket] = useState<any>();
   const [playerList, setPlayerList] = useState<Player[]>([]);
   const [serverPlayerList, setServerPlayerList] = useState<Player[]>([]);
   const [query, setQuery] = useUrlState({ port: 3101, host: "localhost" });
@@ -36,8 +36,9 @@ const GameDemo = () => {
     const { host, port } = query;
     console.error(host, port);
 
-    const socket = io(`ws://${host}:${port}`, { path: "game-demo" });
+    const socket = io(`http://${host}:${port}`, { path: "/game-demo" });
     socket.id = curPlayer.current.id;
+    console.error(socket);
 
     setSocket(socket);
 

@@ -1,11 +1,14 @@
 import { Server } from "socket.io";
 import Player from "../Game/Player";
-import { cloneDeep, isNumber, throttle } from "lodash";
+import { cloneDeep } from "lodash";
 
 const args = process.argv.splice(2);
-const port = parseInt(args[0]) ?? 3101;
+const port = parseInt(args[0] ?? 3101);
 
-const io = new Server(port, { cors: { origin: "*" }, path: "game-demo" });
+const io = new Server(port, { cors: { origin: "*" } });
+
+console.error(io);
+
 const playerList: Player[] = [];
 
 const getCurPlayerById = (id: string) =>
